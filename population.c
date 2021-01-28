@@ -168,7 +168,7 @@ void mutationClones(Population *population)
 /*** Et on garde le meilleur des deux                                ***/
 void selectionMeilleursEtClonesMutes(Population *population)
 {
-
+hello
  /* Les declarations de variables a mettre ici ! */
 
 
