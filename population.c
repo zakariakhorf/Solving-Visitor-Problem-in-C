@@ -168,8 +168,7 @@ void mutationClones(Population *population)
 /*** Et on garde le meilleur des deux                                ***/
 void selectionMeilleursEtClonesMutes(Population *population)
 {
-hello
- /* Les declarations de variables a mettre ici ! */
+  /* Les declarations de variables a mettre ici ! */
 
 
  /* methode de comparaison 2 à 2 */
@@ -178,6 +177,15 @@ hello
 
  /* A completer ... */
 
+int i,j = 0;
+ int nbClones=population->nbClones;
+
+ for(i=population->nbIndividus - population->nbClones;i<nbIndividus;i++ , j++)
+ {
+    if (population->individus[i].cout < population->clones[j].cout) {
+      population->individus[i] = population->clones[j] ; 
+
+    }else { //Rien}
 }
 
 /*** Les moins bons doivent etre a gauche (apres un tri par exemple) ***/
